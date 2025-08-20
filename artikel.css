@@ -1,0 +1,80 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+p {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #A94064;
+  
+}
+
+/* Header */
+header {
+  background-color: pink;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Efek Hover */
+nav ul li a:hover {
+  color: #d1768f;
+}
+
+/* Garis bawah animasi */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
